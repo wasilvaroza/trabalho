@@ -1,0 +1,1 @@
+json.partial! "recrutadors/recrutador", recrutador: @recrutador

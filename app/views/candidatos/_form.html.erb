@@ -1,0 +1,27 @@
+<%= form_for(@candidato) do |f| %>
+  <% if @candidato.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@candidato.errors.count, "error") %> prohibited this candidato from being saved:</h2>
+
+      <ul>
+      <% @candidato.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+  <div class="field">
+    <%= f.label :Foto %><br>
+    <%= f.text_field :foto %>
+  </div>
+  <div class="field">
+    <%= f.label :Formacao %><br>
+    <%= f.text_field :formacao %>
+  </div>
+  <div class="actions">
+    <%= f.submit :Atualizar %>
+  </div>
+<% end %>

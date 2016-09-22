@@ -1,0 +1,21 @@
+<%= form_for(@recrutador) do |f| %>
+  <% if @recrutador.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@recrutador.errors.count, "error") %> prohibited this recrutador from being saved:</h2>
+
+      <ul>
+      <% @recrutador.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :empresa %><br>
+    <%= f.text_field :empresa %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

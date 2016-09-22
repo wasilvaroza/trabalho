@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Id_Vaga: 1
+  Id_Recrutador: 1
+  cargo: MyString
+  salario: 1.5
+  cargaHoraria: 2016-09-20 22:06:42
+  email: MyString
+  telefone: MyString
+
+two:
+  Id_Vaga: 1
+  Id_Recrutador: 1
+  cargo: MyString
+  salario: 1.5
+  cargaHoraria: 2016-09-20 22:06:42
+  email: MyString
+  telefone: MyString

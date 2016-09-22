@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Id_Candidato: 1
+  Id_Pessoa: 1
+  foto: MyString
+  formacao: MyString
+
+two:
+  Id_Candidato: 1
+  Id_Pessoa: 1
+  foto: MyString
+  formacao: MyString

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Foto:</strong>
+  <%= @candidato.foto %>
+</p>
+
+<p>
+  <strong>Formacao:</strong>
+  <%= @candidato.formacao %>
+</p>
+
+<%= link_to 'Editar', edit_candidato_path(@candidato) %> |
+<%= link_to 'Voltar', candidatos_path %>

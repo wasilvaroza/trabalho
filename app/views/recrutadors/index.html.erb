@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Recrutadors</h1>
+
+<table>
+  <thead>
+    <tr>
+     
+      <th>Empresa</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @recrutadors.each do |recrutador| %>
+      <tr>
+        
+        <td><%= recrutador.empresa %></td>
+        <td><%= link_to 'Show', recrutador %></td>
+        <td><%= link_to 'Edit', edit_recrutador_path(recrutador) %></td>
+        <td><%= link_to 'Destroy', recrutador, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Recrutador', new_recrutador_path %>

@@ -1,0 +1,1 @@
+json.array! @recrutadors, partial: 'recrutadors/recrutador', as: :recrutador
